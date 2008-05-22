@@ -1,6 +1,6 @@
 task :default => :commit
 
-task :commit_one do
+def commit_one
   File.open("ftest.txt", "a") do |f|
     f.write "hello"
   end
@@ -8,7 +8,7 @@ task :commit_one do
 end
 
 task :commit do
-  Rake::Task['commit_one'].invoke
+  commit_one
   sleep 2
-  Rake::Task['commit_one'].invoke
+  commit_one
 end
