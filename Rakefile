@@ -2,7 +2,7 @@ task :default => :commit
 
 def commit_one
   File.open("ftest.txt", "a") do |f|
-    f.write "hello"
+    f.write "hello\n"
   end
   `git add . && git-commit -a -m "message-#{Time.now.to_i}"`
 end
