@@ -5,7 +5,7 @@ def commit_one
     f.write "hello\n"
   end
 
-  `git add . && git-commit -a -m "message-#{Time.now.to_i}" --author "Username <username@host.com>"`
+  `git add . && git-commit -a -m "message-#{Time.now.to_i}, re #1" --author "Username <username@host.com>"`
 end
 
 task :commit do
