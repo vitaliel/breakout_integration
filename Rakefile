@@ -8,7 +8,7 @@ task :commit_one do
 end
 
 task :commit do
-  Rake::Task[:commit_one].invoke
+  Rake::Task['commit_one'].invoke
   sleep 2
-  Rake::Task[:commit_one].invoke
+  Rake::Task['commit_one'].invoke
 end
