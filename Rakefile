@@ -4,7 +4,8 @@ def commit_one
   File.open("ftest.txt", "a") do |f|
     f.write "hello\n"
   end
-  `git add . && git-commit -a -m "message-#{Time.now.to_i}"`
+
+  `git add . && git-commit -a -m "message-#{Time.now.to_i}" --author "Username <username@host.com>"`
 end
 
 task :commit do
