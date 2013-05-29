@@ -1,5 +1,0 @@
-task :default => :commit
-
-task :commit do
-
-end
