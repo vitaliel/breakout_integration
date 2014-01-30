@@ -1,5 +1,5 @@
 # Re ticket1
-#
+# Re ticket1
 task :default => :commit
 
 def commit_one
